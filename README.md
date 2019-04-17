@@ -89,3 +89,7 @@ fa0a4ae326b8        mysql               "docker-entrypoint.s…"   5 minutes ago
 $
 ~~~
 
+3. Access Wordpress on browser  
+Access localhost on browser 
+http://localhost:8080/
+
