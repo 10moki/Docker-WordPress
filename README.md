@@ -45,6 +45,42 @@ Status: Downloaded newer image for mysql:latest
 $ echo $?
 0
 $
+$ docker pull wordpress
+Using default tag: latest
+latest: Pulling from library/wordpress
+27833a3ba0a5: Already exists
+2d79f6773a3c: Pull complete
+f5dd9a448b82: Pull complete
+95719e57e42b: Pull complete
+cc75e951030f: Pull complete
+78873f480bce: Pull complete
+1b14116a29a2: Pull complete
+887fc426d9b4: Pull complete
+e8a2a7e68e47: Pull complete
+44116bd4b499: Pull complete
+5a7ed133cf7c: Pull complete
+a0cc2e7ce3b9: Pull complete
+3ea943f2a6e6: Pull complete
+b7cbb4ae8469: Pull complete
+f1ee59d1627e: Pull complete
+480e816f1b42: Pull complete
+9803a14680f4: Pull complete
+a9d5149d7240: Pull complete
+7a162cc00537: Pull complete
+Digest: sha256:eb7fb32d7098153b586cb6c0c8c7fb3b9684c66ccff803734b0895e49210fe08
+Status: Downloaded newer image for wordpress:latest
+$ 
+$ echo $?
+0
 $
-
 ~~~
+
+2. Boot container  
+~~~
+$ docker run --name c-mysql -e MYSQL_ROOT_PASSWORD=passwordmysql -d mysql  
+fa0a4ae326b8367aa8ab47b4fcd5d694fe4b538143c16ef55d7ca6b977bfc168  
+$ docker run --name c-wordpress --link c-mysql:mysql -d -p 8080:80 wordpress  
+940b8b6344c388c80a80d124190b94afe59a040080f2925e1d3b43a427604a48  
+$ 
+~~~
+
