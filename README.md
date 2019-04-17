@@ -82,5 +82,10 @@ fa0a4ae326b8367aa8ab47b4fcd5d694fe4b538143c16ef55d7ca6b977bfc168
 $ docker run --name c-wordpress --link c-mysql:mysql -d -p 8080:80 wordpress  
 940b8b6344c388c80a80d124190b94afe59a040080f2925e1d3b43a427604a48  
 $ 
+$ docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                  NAMES
+940b8b6344c3        wordpress           "docker-entrypoint.s…"   3 minutes ago       Up 3 minutes        0.0.0.0:8080->80/tcp   c-wordpress
+fa0a4ae326b8        mysql               "docker-entrypoint.s…"   5 minutes ago       Up 5 minutes        3306/tcp, 33060/tcp    c-mysql
+$
 ~~~
 
