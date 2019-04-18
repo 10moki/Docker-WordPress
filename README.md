@@ -80,13 +80,14 @@ Creating network "my_wordpress_default" with the default driver
 Creating c-mysql ... done
 Creating c-wordpress ... done
 $ 
-!! if you want to down container , you can use the following command  
-$ docker-compose dow 
-$ docker-compose stop
+!! if you want to down container , you can use the following command (from official site)  
+The command "docker-compose down" removes the containers and default network, but preserves your WordPress database.  
+The command "docker-compose down --volumes" removes the containers, default network, and the WordPress database.  
 ~~~
 
 3. Access Wordpress on browser  
 Access localhost on browser 
 http://localhost:8000/
 
+### 3. Setup WordPress on Browser
 
