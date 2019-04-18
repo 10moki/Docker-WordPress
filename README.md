@@ -86,7 +86,7 @@ The command "docker-compose down --volumes" removes the containers, default netw
 ~~~
 
 3. Access Wordpress on browser  
-Access localhost on browser 
+Access localhost on browser  
 http://localhost:8000/
 
 ### 3. Setup WordPress on Browser
