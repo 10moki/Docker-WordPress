@@ -3,6 +3,13 @@
 ## Environment
 * OS  
  macOS 10.12.6
+* Directory  
+~~~
+ my_wordpress/  
+   db_data/  
+   docker-compose.yml  
+   www/  
+~~~
 
 ## Procedure  
 ### 1. Install Docker
@@ -73,10 +80,10 @@ Creating network "my_wordpress_default" with the default driver
 Creating c-mysql ... done
 Creating c-wordpress ... done
 $ 
+!! if you want to down container , you can use the following command  
+$ docker-compose dow 
+$ docker-compose stop
 ~~~
-if you want to down container , you can use the following command  
-$ docker-compose down  
-$ docker-compose stop  
 
 3. Access Wordpress on browser  
 Access localhost on browser 
